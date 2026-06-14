@@ -84,3 +84,4 @@ are still accepted and stored.
 ## Overall Conclusion
 
 The API functions correctly for basic usage but contains several intentional implementation issues that affect reliability and scalability. The most significant performance concerns are the large unpaginated responses and the blocking code inside `POST /favorites`, both of which become apparent during load testing. Additionally, missing CORS support, incorrect pagination metadata, and lack of input validation reduce the robustness of the application and should be addressed before production deployment.
+These bugs are to be tackled with.
